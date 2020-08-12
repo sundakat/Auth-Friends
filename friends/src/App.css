@@ -16,21 +16,19 @@ h3 {
 }
 .friendsList {
   background: yellow;
-  border: 1px solid #000000;
+  border: 3px solid #000000;
   opacity: 0.7;
   margin: 30px 10px;
   padding: 5px;
   max-width: 95%;
-  
   max-height: 165px;
   border-radius: 5px;
   box-shadow: 5px 5px 8px #263230;
   transition: all 0.5s;
-  color: #848aa5;
 }
 .friendsList:hover {
   transform: translateY(-1rem) scale(1.03);
-  box-shadow: 6px 6px 20px #35605A;
+  box-shadow: 6px 6px 20px #3e4141;
 }
 .App-header {
   display: flex;
@@ -41,14 +39,27 @@ h3 {
 }
 
 :any-link {
-  text-decoration: none;
   color: rgb(0, 0, 0);
+  text-decoration: wavy;
+  text-decoration-line: overline;
+  -moz-text-decoration-line: overline;
 }
 
 :any-link:hover {
   color: rgb(191, 18, 18);
+  text-decoration: none;
+  text-decoration-line: underline;
+  -moz-text-decoration-line: underline;
 }
 
 img {
   align-self: center;
+}
+
+.add:hover {
+  background-color: royalblue;
+}
+
+.submit:hover {
+  background-color: royalblue;
 }
