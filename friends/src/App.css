@@ -1,38 +1,54 @@
 .App {
+  font-family: GabrielWeissFriendsFont;
   text-align: center;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: GabrielWeissFriendsFont;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(191, 18, 18);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+  color: royalblue;
 }
-
+.friendsList {
+  background: yellow;
+  border: 1px solid #000000;
+  opacity: 0.7;
+  margin: 30px 10px;
+  padding: 5px;
+  max-width: 95%;
+  
+  max-height: 165px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px #263230;
+  transition: all 0.5s;
+  color: #848aa5;
+}
+.friendsList:hover {
+  transform: translateY(-1rem) scale(1.03);
+  box-shadow: 6px 6px 20px #35605A;
+}
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  font-family: GabrielWeissFriendsFont;
 }
 
-.App-link {
-  color: #61dafb;
+:any-link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:any-link:hover {
+  color: rgb(191, 18, 18);
+}
+
+img {
+  align-self: center;
 }
