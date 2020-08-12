@@ -71,7 +71,7 @@ function Login(props) {
 					onChange={handleChange}
 					placeholder='Password'
 				/>
-				<Buttons>Submit</Buttons>
+				<Buttons className="submit">Submit</Buttons>
 			</form>
 			<br/>
 			<img src={friendsCouch} alt="Friends Home" />
