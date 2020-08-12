@@ -3,7 +3,6 @@ import { axiosWithAuth } from '../utils/axiosWithAuth';
 import styled from 'styled-components';
 
 
-
 const AddForm = styled.input`
 	border: 2px solid rgb(0, 11, 126);
 	margin-right: 20px;
@@ -20,6 +19,7 @@ const Buttons = styled.button`
 	font-size: 1.0rem;
 	font-weight: bold;
 `;
+
 const AuthFriends = ({ setFriends }) => {
 	const [ newFriend, setNewFriend ] = useState({
 		name  : '',
@@ -54,7 +54,7 @@ const AuthFriends = ({ setFriends }) => {
 			<AddForm type='text' name='name' value={newFriend.name} onChange={handleChanges} placeholder='Name:' />
 			<AddForm type='text' name='age' value={newFriend.age} onChange={handleChanges} placeholder='Age:' />
 			<AddForm type='text' name='email' value={newFriend.email} onChange={handleChanges} placeholder='Email:' />
-			<Buttons onClick={() => friendPosted(newFriend)}>Add Friend</Buttons>
+			<Buttons className="add" onClick={() => friendPosted(newFriend)}>Add Friend</Buttons>
 		</div>
 	);
 };
